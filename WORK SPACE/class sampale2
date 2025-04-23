@@ -1,0 +1,10 @@
+class sampale2 
+{     
+        public static void main(String[] args)
+        {       System.out.println("program starts");
+                System.out.println("today is the 2nd day of your java programming.#session3-programming will have more basic programs");
+                
+        }
+
+
+}

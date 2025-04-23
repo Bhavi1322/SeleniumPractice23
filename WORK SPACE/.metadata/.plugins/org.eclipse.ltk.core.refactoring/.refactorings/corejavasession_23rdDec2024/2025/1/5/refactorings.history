@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;FactorsOfNegative.java&apos; to &apos;Assignme.FactorsOfNegative.java&apos;&#x0D;&#x0A;- Original project: &apos;corejavasession_23rdDec2024&apos;&#x0D;&#x0A;- Destination element: &apos;Assignme.FactorsOfNegative.java&apos;&#x0D;&#x0A;- Original element: &apos;Assignme.FactorsOfNegative.java&apos;" description="Copy compilation unit" destination="/src&lt;Assignme{FactorsOfNegative.java" element1="/src&lt;Assignme{FactorsOfNegative.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1738137823240" units="1" version="1.0"/>
+</session>

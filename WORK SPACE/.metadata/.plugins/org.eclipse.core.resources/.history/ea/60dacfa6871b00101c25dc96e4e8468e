@@ -1,0 +1,46 @@
+package day10switching;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+//import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.interactions.Actions;
+
+//import java.time.Duration;
+import java.util.List;
+//import org.openqa.selenium.WebDriver;
+//import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Assignments1 {
+
+	@SuppressWarnings("unused")
+	public static void main(String[] args) {
+			//open browser-chorme
+			
+		  WebDriver driver=new ChromeDriver();
+					//enter require application URL
+		  
+ 		 driver.get("https://jqueryui.com/sortable/");
+				//click on sortabl
+ 		 @SuppressWarnings("unused")
+		List<WebElement> items=driver.findElements(By.cssSelector("sortable li"));
+ 		   Actions actions=new Actions(driver);
+ 		   
+ 		   //sort the element from 7 to 1
+ 		   for(int i= items.size()-1;i>0;i--) {
+ 			   actions.clickAndHold(items.get(i))
+ 			          .moveToElement(items.get(0))
+ 			          .moveByOffset(1, - 7)
+ 			          .release()
+ 			          .perform();
+ 			   //
+ 			//   items = driver.findElements(By.cssSelector("sortable li"));
+ 			          
+ 			          
+ 			          
+ 			          
+ 			          
+ 		   }
+	}
+
+}

@@ -1,0 +1,40 @@
+package day10switching;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
+
+import java.util.List;
+public class Assignments1 {
+
+	public static void main(String[] args) {
+			//open browser-chorme
+		  WebDriver driver=new ChromeDriver();
+		  
+					//enter require application URL
+ 		 driver.get("https://jqueryui.com/sortable/");
+ 		 
+				//click on sortabl
+		List<WebElement> items=driver.findElements(By.cssSelector("sortable li"));
+		
+ 		   Actions actions=new Actions(driver);
+ 		   
+ 		   //sort the element from 7 to 1
+ 		   for(int i= items.size()-1 ;i>1;i++) {
+ 			   actions.clickAndHold(items.get(i))
+ 			          .moveToElement(items.get(1))
+ 			          .moveByOffset(7, - 1)
+ 			          .release()
+ 			          .perform();
+ 			   
+ 			   items = driver.findElements(By.cssSelector("sortable li"));
+ 		   }    
+ 			          
+ 		  System.out.println("Sorted from 7 to 1 successfully!");  
+ 			          
+ 			          
+ 		   }
+	}
+
+

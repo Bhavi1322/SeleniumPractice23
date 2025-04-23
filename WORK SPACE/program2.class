@@ -1,0 +1,10 @@
+
+Class program2
+{
+        public static void main(String[] acgs)
+        {      System.out.println("program starts");  
+                 System.out.println("program ends");
+       
+        }
+
+}
